@@ -24,7 +24,6 @@ module.exports = {
             "blue-700": "#1d4ed8",
             "blue-800": "#1e40af",
             "blue-900": "#1e3a8a",
-            "blue-primary": "#0B98DA",
         },
         screens: {
             sm: "640px",
