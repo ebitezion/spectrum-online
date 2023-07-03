@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Spectrum Bank</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Spectrum Bank" />
+        <meta name="author" content="alithemes.com" />
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/imgs/logos/spectrum_fav-icon.png" />
+        <!-- Vendor CSS -->
+        <link rel="stylesheet" href="assets/css/animate.min.css?v=2.0" />
+        <link rel="stylesheet" href="assets/css/slick.css?v=2.0" />
+        <!-- Template CSS -->
+        <link rel="stylesheet" href="assets/css/tailwind-built.css?v=2.0" />
+        <!-- CDN tailwinnd css -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- google icon cdn -->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+    </head>
+    <body class="bg-white text-body font-body">
+        <div class="main mx-3 lg:mx-40">
+            <!--Header-->
+            <header class="bg-transparent sticky-bar mt-4">
+                <div class="container bg-transparent">
+                    <nav class="bg-transparent flex justify-between items-center py-3">
+                        <a class="text-3xl font-semibold leading-none" href="index.html">
+                            <img class="h-10" src="assets/imgs/logos/spectrum_logo.png" alt="" />
+                        </a>
+                        <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
+                            <li class="group relative pt-4 pb-4">
+                                <a href="index.html" class="text-lg font-semibold text-blueGray-600 hover:text-blueGray-500">Home</a>
+                            </li>
+                            <li class="pt-4 pb-4">
+                                <a class="text-lg font-semibold text-blueGray-600 hover:text-blueGray-500" href="about.html">About Us</a>
+                            </li>
+                            <li class="pt-4 pb-4">
+                                <a class="text-lg font-semibold text-blueGray-600 hover:text-blueGray-500" href="services.html">Services</a>
+                            </li>
+                            <li class="group relative pt-4 pb-4">
+                                <a class="text-lg font-semibold text-blueGray-600 hover:text-blueGray-500" href="#">Company</a>
+                            </li>
+
+                            <li class="pt-4 pb-4">
+                                <a class="text-lg font-semibold text-blueGray-600 hover:text-blueGray-500" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+
+                        <div class="hidden lg:block">
+                            <a
+                                class="tracking-wide hover-up-2 block sm:inline-block py-3 px-7 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-[#0B98DA] hover:bg-blue-900 rounded wow animate__animated animate__fadeInUp"
+                                href="#key-features"
+                                >Online Banking</a
+                            >
+                        </div>
+                        <div class="lg:hidden">
+                            <button
+                                class="navbar-burger flex items-center py-2 px-3 text-blue-500 hover:text-blue-700 rounded border border-blue-200 hover:border-blue-300"
+                            >
+                                <svg class="fill-current h-4 w-4" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Mobile menu</title>
+                                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            <!--Mobile menu-->
+            <div class="hidden navbar-menu relative z-50 transition duration-300">
+                <div class="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25"></div>
+                <nav
+                    class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto transition duration-300"
+                >
+                    <div class="flex items-center mb-8">
+                        <a class="mr-auto text-3xl font-semibold leading-none" href="#">
+                            <img class="h-10" src="assets/imgs/logos/monst-logo.svg" alt="" />
+                        </a>
+                        <button class="navbar-close">
+                            <svg
+                                class="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-blue-500"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewbox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div>
+                        <ul class="mobile-menu">
+                            <li class="mb-1 menu-item-has-children rounded-xl">
+                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl" href="#">Home</a>
+                                <ul class="dropdown pl-5">
+                                    <li>
+                                        <a class="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500" href="index.html"
+                                            >Home 1</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500" href="index-2.html"
+                                            >Home 2</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="mb-1 rounded-xl">
+                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl" href="about.html"
+                                    >About Us</a
+                                >
+                            </li>
+                            <li class="mb-1">
+                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500" href="services.html">Services</a>
+                            </li>
+
+                            <li class="mb-1">
+                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500" href="testimonials.html"
+                                    >Testimonial</a
+                                >
+                            </li>
+                            <li class="mb-1">
+                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500" href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div class="mt-4 pt-6 border-t border-blueGray-100">
+                            <a
+                                class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 text-white rounded"
+                                href="#"
+                                >Sign Up</a
+                            >
+                            <a
+                                class="block px-4 py-3 mb-2 text-xs text-center text-blue-500 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded"
+                                href="#"
+                                >Log In</a
+                            >
+                        </div>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="my-4 text-xs text-blueGray-400">
+                            <span>Get in Touch</span>
+                            <a class="text-blue-500 hover:text-blue-500 underline" href="#">contact@monst.com</a>
+                        </p>
+                        <a class="inline-block px-1" href="#">
+                            <img src="assets/imgs/icons/facebook-blue.svg" alt="" />
+                        </a>
+                        <a class="inline-block px-1" href="#">
+                            <img src="assets/imgs/icons/twitter-blue.svg" alt="" />
+                        </a>
+                        <a class="inline-block px-1" href="#">
+                            <img src="assets/imgs/icons/instagram-blue.svg" alt="" />
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <!--Hero-->
+
+            <section class="hero-3 mt-20 md:mt-1">
+                <div class="container">
+                    <div class="flex flex-wrap items-center -mx-3">
+                        <div class="w-full lg:w-2/5 px-3 lg:ps-28">
+                            <div class="max-w-lg lg:max-w-md mx-auto lg:mx-0 mb-8 text-center lg:text-left">
+                                <h2 class="text-3xl lg:text-4xl mb-4 font-bold font-heading wow">
+                                    Accelerate your growth with<span class="text-[#0B98DA]"> Spectrum Micro Finance Bank</span>
+                                </h2>
+                                <p class="text-blueGray-400 leading-relaxed wow animate__animated animate__fadeIn">
+                                    We are <strong class="text-[#0B98DA]">Spectrum</strong>, Micro Finance Bank
+                                    <span
+                                        class="typewrite d-inline text-brand"
+                                        data-period="3000"
+                                        data-type='["Download The Spectrum Pay App On Google Playstore", " Or Just Dial *5434" ]'
+                                    ></span>
+                                </p>
+                            </div>
+                            <div class="text-center lg:text-left">
+                                <a
+                                    class="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-900 hover:bg-blue-900 rounded wow animate__animated animate__fadeInUp"
+                                    href="#key-features"
+                                    >Key Features</a
+                                >
+                            </div>
+                        </div>
+                        <div class="w-full lg:w-3/5 px-3 mb-12 lg:mb-0">
+                            <div class="lg:h-128 flex items-center justify-center">
+                                <img class="lg:max-w-lg" src="assets/imgs/illustrations/work-tv.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- card section -->
+            <div class="flex flex-col lg:flex-row lg:max-w-6xl mx-auto gap-6">
+                <div class="hover-up-5 w-full md:w-1/3 lg:w-full mb-4 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+                    <div class="pt-10 pb-8 px-6 bg-white text-center rounded shadow border border-gray-100">
+                        <div class="text-blue-500 mx-auto mb-4"></div>
+                        <h3 class="mb-2 font-bold font-heading">Looking for Creative</h3>
+                        <p class="text-sm text-blueGray-400 leading-loose">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="hover-up-5 w-full md:w-1/3 lg:w-full wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
+                    <div class="pt-10 pb-8 px-6 bg-white text-center rounded shadow border border-gray-100">
+                        <div class="text-blue-500 mx-auto mb-4"></div>
+                        <h3 class="mb-2 font-bold font-heading">Project Initialization</h3>
+                        <p class="text-sm text-blueGray-400 leading-loose">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="hover-up-5 w-full md:w-1/3 lg:w-full wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
+                    <div class="pt-10 pb-8 px-6 bg-white text-center rounded shadow border border-gray-100">
+                        <div class="text-blue-500 mx-auto mb-4"></div>
+                        <h3 class="mb-2 font-bold font-heading">Project Initialization</h3>
+                        <p class="text-sm text-blueGray-400 leading-loose">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- product section -->
+            <section class="py-12 lg:mb-6">
+                <div class="">
+                    <div class="flex flex-wrap justify-center">
+                        <div class="w-full md:w-1/2 px-3 order-1 md:order-0">
+                            <div class="max-w-lg lg:mt-20">
+                                <h2 class="text-4xl font-bold font-heading text-blue-900 mb-4">Get quick loans whenever you need</h2>
+
+                                <h6 class="font-normal mb-6">
+                                    Spectrum loans give you access to personal loans, payday loans and business loans with flexible repayment plans at
+                                    competitive interest rates.
+                                </h6>
+                                <a
+                                    class="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-blue-900 text-center font-semibold leading-none hover:bg-blue-900 hover:text-white rounded wow animate__animated animate__fadeInUp outline"
+                                    href="#key-features"
+                                >
+                                    More
+                                </a>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 px-3 order-0 md:order-1 mb-12 md:mb-0 wow animate__animated animate__fadeIn" data-wow-delay=".5s">
+                            <img class="sm:max-w-sm lg:max-w-lg mx-auto" src="assets/imgs/illustrations/transfer.svg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /product -->
+            <!-- product section reverse -->
+            <section class="py-12 lg:mb-6">
+                <div class="">
+                    <div class="flex flex-wrap justify-center">
+                        <div class="w-full md:w-1/2 px-3 order-1 md:order-0">
+                            <div class="max-w-lg lg:mt-20">
+                                <h2 class="text-4xl font-bold font-heading text-blue-900 mb-4">Make Savings at your Comfort</h2>
+
+                                <h6 class="font-normal mb-6">
+                                    Our savings accounts encourage multiple savings and improves your chances of meeting your financial goals..
+                                </h6>
+                                <a
+                                    class="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-blue-900 text-center font-semibold leading-none hover:bg-blue-900 hover:text-white rounded wow animate__animated animate__fadeInUp outline"
+                                    href="#key-features"
+                                >
+                                    More
+                                </a>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 px-3 order-0 md:order-0 mb-12 md:mb-0 wow animate__animated animate__fadeIn" data-wow-delay=".5s">
+                            <img class="sm:max-w-sm lg:max-w-lg mx-auto" src="assets/imgs/illustrations/save.svg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- product section -->
+            <section class="py-12 lg:mb-12">
+                <div class="">
+                    <div class="flex flex-wrap justify-center">
+                        <div class="w-full md:w-1/2 px-3 order-1 md:order-0">
+                            <div class="max-w-full lg:mt-20">
+                                <h2 class="text-4xl font-bold font-heading text-blue-900 mb-4">Invest for the future</h2>
+
+                                <h6 class="font-normal mb-6">
+                                    Let your money do the talking this time. Take advantage of our flexible investment plans with high return on
+                                    deposits.
+                                </h6>
+                                <a
+                                    class="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-blue-900 text-center font-semibold leading-none hover:bg-blue-900 hover:text-white rounded wow animate__animated animate__fadeInUp outline"
+                                    href="#key-features"
+                                >
+                                    More
+                                </a>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 px-3 order-0 md:order-1 mb-12 md:mb-0 wow animate__animated animate__fadeIn" data-wow-delay=".5s">
+                            <img class="sm:max-w-sm lg:max-w-lg mx-auto" src="assets/imgs/illustrations/invest.svg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /product -->
+
+            <section class="mb-20">
+                <div class="mx-0 md:mx-36">
+                    <div class="flex flex-wrap md:rounded-full shadow wow animate__animated animate__fadeInUp animated bg-[#f0f3f9]">
+                        <div class="w-full md:w-1/2 lg:w-2/5 px-3">
+                            <div class="p-8 text-center">
+                                <div class="flex items-center h-full">
+                                    <img class="h-80 ml-7" src="assets/imgs/illustrations/savings.svg" />
+                                    \
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative w-full md:w-1/2 lg:w-3/5 px-7 bg-[#EBF4FF] md:rounded-full overflow-hidden">
+                            <div class="max-w-sm lg:px-12 pt-12 ml-12 pb-14 sm:mx-auto">
+                                <h6 class="font-semibold">Quick Loans</h6>
+                                <h2 class="text-4xl font-bold font-heading text-blue-900">Get quick loans whenever you need</h2>
+
+                                <h6 class="font-bold mb-4">
+                                    Spectrum loans give you access to personal loans, payday loans and business loans with flexible repayment plans at
+                                    competitive interest rates.
+                                </h6>
+                                <a
+                                    class="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-blue-900 font-semibold leading-none bg-white hover:bg-blue-700 hover:text-white rounded wow animate__animated animate__fadeInUp"
+                                    href="#key-features"
+                                >
+                                    More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- card design-->
+        </div>
+        <!-- bg-[#032352] -->
+        <section class="py-10 h-1/2" style="background-color: #fdfbf6">
+            <div class="">
+                <div class="text-center max-w-2xl mx-auto">
+                    <h2 class="text-3xl lg:text-4xl text-blue-900 font-bold font-heading lg:mx-5 mx-7">
+                        <span>Download The Spectrum App</span>
+                    </h2>
+
+                    <a
+                        class="block sm:inline-block hover-up-2 py-4 px-5 font-semibold leading-none rounded wow animate__animated animate__fadeInUp"
+                        data-wow-delay=".3s"
+                        href="#how-we-work"
+                        ><img
+                            src="assets/imgs/logos/googleplay.png
+                    "
+                            alt=""
+                            class="w-5/12 lg:w-full mx-auto my-0"
+                    /></a>
+                    <a
+                        class="block sm:inline-block hover-up-2 py-4 px-5 font-semibold leading-none rounded wow animate__animated animate__fadeInUp"
+                        data-wow-delay=".3s"
+                        href="#how-we-work"
+                        ><img src="assets/imgs/logos/appstore.png" alt="" class="w-5/12 lg:w-full mx-auto my-0"
+                    /></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- End .main -->
+        <!-- footer -->
+        <footer>
+            <div class="bg-[#EBF4FF] p-7 md:p-28">
+                <div class="container pb-13 pb-md-15">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="widget">
+                            <p class="mb-4">© 2023 Spectrum. <br class="hidden lg:block" />All rights reserved.</p>
+                            <h4 class="mb-3 text-blue-900 font-semibold">Social Media Links</h4>
+                            <nav class="flex space-x-4">
+                                <div class="order-first lg:order-last -mx-2 mb-4 lg:mb-0">
+                                    <a class="inline-block px-2" href="#">
+                                        <img src="assets/imgs/icons/facebook-blue.svg" class="text-red-400" alt="" />
+                                    </a>
+                                    <a class="inline-block px-2" href="#">
+                                        <img src="assets/imgs/icons/twitter-blue.svg" alt="" />
+                                    </a>
+                                    <a class="inline-block px-2" href="#">
+                                        <img src="assets/imgs/icons/instagram-blue.svg" alt="" />
+                                    </a>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="widget">
+                            <h4 class="mb-3 text-blue-900 font-semibold">Quick Links</h4>
+                            <ul class="list-none">
+                                <li class="mb-2 hover:text-blue-800"><a href="">Loans</a></li>
+                                <li class="mb-2 hover:text-blue-800"><a href="">Savings</a></li>
+                                <li class="mb-2 hover:text-blue-800"><a href="">Investments </a></li>
+                                <li class="mb-2 hover:text-blue-800"><a href="">Privacy Policy </a></li>
+                            </ul>
+                        </div>
+                        <div class="widget">
+                            <h4 class="mb-3 text-blue-900 font-semibold">Contact</h4>
+                            <ul class="list-none">
+                                <li class="mb-2 hover:text-blue-800"><a href="">Loans</a></li>
+                                <li class="mb-2 hover:text-blue-800"><a href="">Savings</a></li>
+                                <li class="mb-2 hover:text-blue-800"><a href="">Investments </a></li>
+                                <li class="mb-2 hover:text-blue-800"><a href="">Privacy Policy </a></li>
+                            </ul>
+                        </div>
+                        <div class="widget">
+                            <h4 class="mb-3 text-blue-900 font-semibold">Subscribe</h4>
+                            <div class="mt-5">
+                                <p
+                                    class="mb-4 text-xs text-blueGray-400 text-center lg:text-left wow animate__animatedanimated animate__fadeInUp animated"
+                                    data-wow-delay=".1s"
+                                >
+                                    Subscribe and stay fully connected with Spectrum.
+                                </p>
+                                <div
+                                    class="flex flex-wrap lg:flex-nowrap items-center wow animate__animatedanimated animate__fadeInUp animated"
+                                    data-wow-delay=".3s"
+                                >
+                                    <div class="flex w-full lg:w-2/3 mb-3 lg:mb-0 px-4 bg-blueGray-50 rounded">
+                                        <svg class="h-6 w-6 my-auto" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
+                                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                        </svg>
+                                        <input
+                                            class="w-full py-4 pl-3 text-xs text-blueGray-400 bg-blueGray-50 outline-none"
+                                            type="text"
+                                            placeholder="E-mail"
+                                        />
+                                    </div>
+                                    <button
+                                        class="hover-up-2 w-full lg:w-1/2 py-4 px-8 lg:ml-6 text-xs text-white font-semibold leading-none bg-blue-900 hover:bg-white hover:text-blue-700 rounded hover:outline hover:outline-blue-900"
+                                        type="submit"
+                                    >
+                                        Sign Up
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--Import Vendor Js-->
+        <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+        <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/vendor/waypoints.js"></script>
+        <script src="assets/js/vendor/counterup.js"></script>
+        <script src="assets/js/vendor/slick.js"></script>
+        <script src="assets/js/vendor/wow.js"></script>
+        <script src="assets/js/vendor/scrollup.js"></script>
+        <script src="assets/js/vendor/smooth.js"></script>
+        <script src="assets/js/vendor/textType.js"></script>
+        <script src="assets/js/vendor/mobile-menu.js"></script>
+        <script src="assets/js/main.js?v=2.0"></script>
+    </body>
+</html>
