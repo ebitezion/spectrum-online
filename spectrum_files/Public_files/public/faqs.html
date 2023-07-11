@@ -38,10 +38,20 @@
                                 <a class="text-lg font-semibold text-blueGray-600 hover:text-blueGray-500" href="about.html">About Us</a>
                                 <ul class="drop-down-menu min-w-200">
                                     <li>
-                                        <a href="about.html" class="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">Company</a>
+                                        <div class="flex items-center space-x-0 ml-3 mb-4">
+                                            <div class="inline-flex items-center rounded-full p-2 bg-[#FDEFB2]">
+                                                <span class="material-symbols-outlined text-yellow-900">apartment</span>
+                                            </div>
+                                            <a href="about.html" class="text-sm text-blueGray-600 ml-2 hover:text-blueGray-500">Company</a>
+                                        </div>
                                     </li>
                                     <li>
-                                        <a href="faqs.html" class="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">Faqs</a>
+                                        <div class="flex items-center space-x-0 ml-3 mb-4">
+                                            <div class="inline-flex items-center rounded-full p-2 bg-[#FFD6E8]">
+                                                <span class="material-symbols-outlined text-red-900">help</span>
+                                            </div>
+                                            <a href="faqs.html" class="text-sm text-blueGray-600 ml-2 hover:text-blueGray-500">Faqs</a>
+                                        </div>
                                     </li>
                                 </ul>
                             </li>
@@ -50,15 +60,28 @@
                                 <a class="text-lg font-semibold text-blueGray-600 hover:text-blueGray-500" href="#">Services</a>
                                 <ul class="drop-down-menu min-w-200">
                                     <li>
-                                        <a href="savings.html" class="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">Savings</a>
+                                        <div class="flex items-center space-x-0 ml-3 mb-4">
+                                            <div class="inline-flex items-center rounded-full p-2 bg-[#FDEFB2]">
+                                                <span class="material-symbols-outlined text-yellow-900">savings</span>
+                                            </div>
+                                            <a href="savings.html" class="text-sm text-blueGray-600 ml-2 hover:text-blueGray-500">Savings</a>
+                                        </div>
                                     </li>
                                     <li>
-                                        <a href="loans.html" class="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">Loans</a>
+                                        <div class="flex items-center space-x-0 ml-3 mb-4">
+                                            <div class="inline-flex items-center rounded-full p-2 bg-[#FFD6E8]">
+                                                <span class="material-symbols-outlined text-red-900">payment</span>
+                                            </div>
+                                            <a href="loans.html" class="text-sm text-blueGray-600 ml-2 hover:text-blueGray-500">Loans</a>
+                                        </div>
                                     </li>
                                     <li>
-                                        <a href="investment.html" class="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500"
-                                            >Investment</a
-                                        >
+                                        <div class="flex items-center space-x-0 ml-3 mb-4">
+                                            <div class="inline-flex items-center rounded-full p-2 bg-[#A7F0BA]">
+                                                <span class="material-symbols-outlined text-green-900">trending_up</span>
+                                            </div>
+                                            <a href="investment.html" class="text-sm text-blueGray-600 ml-2 hover:text-blueGray-500">Investment</a>
+                                        </div>
                                     </li>
                                 </ul>
                             </li>
@@ -190,8 +213,75 @@
                     <div class="max-w-4xl mx-auto">
                         <div class="flex-1 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
                             <div class="px-4 mx-auto lg:ml-0">
-                                <h3 class="mb-8 text-4xl font-bold font-heading wow animate__animated animate__fadeInUp">Faqs</h3>
+                                <h3
+                                    class="text-4xl text-center text-[#054766] mb-20 lg:mb-28 font-bold font-heading wow animate__animated animate__fadeInUp"
+                                >
+                                    Faqs
+                                </h3>
+                                <div class="w-0.5 h-full bg-black"></div>
+
+                                <h3 class="mb-2 text-2xl font-bold font-heading lg:text-start wow animate__animated animate__fadeInUp">Loans</h3>
+
                                 <div
+                                    class="mb-20"
+                                    x-data="{
+								faqs: [
+									{
+										question: 'What type of loan do you offer',
+										answer: 'We offer a variety of loans such as Business Loans, Education Support Loans, Salary Earners Loans, Pay-Day Advance Loans Public Sector Loans etc',
+										isOpen: true,
+									},
+									{
+										question: 'How can I return an item purchased online?',
+										answer: 'Since 2007 we have been a visionary and a reliable software design engineering partner for world-class brands. We are a boutique digital transformation consultancy. Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id. ',
+										isOpen: false,
+									},
+									{
+										question: 'Can I cancel or change my order?',
+										answer: 'Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature',
+										isOpen: false,
+									},
+									{
+										question: 'I have promotional or discount code?',
+										answer: 'Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature',
+										isOpen: false,
+									},
+									
+									
+								]
+							}"
+                                    ,
+                                >
+                                    <div class="leading-loose text-lg mt-6 wow animate__animated animate__fadeInUp">
+                                        <template x-for="faq in faqs" :key="faq.question">
+                                            <div>
+                                                <button
+                                                    class="w-full font-semibold border-b text-start text-gray-600 border-gray-200 py-3 flex justify-between items-center mt-4"
+                                                    @click="faqs = faqs.map(f => ({ ...f, isOpen: f.question !== faq.question ? false : !f.isOpen}))"
+                                                    x-bind:class="isOpen ? 'text-blue-500' : ''"
+                                                >
+                                                    <div x-text="faq.question"></div>
+                                                    <svg x-show="!faq.isOpen" class="fill-current" viewBox="0 0 24 24" width="24" height="24">
+                                                        <path
+                                                            class="heroicon-ui"
+                                                            d="M12 22a10 10 0 110-20 10 10 0 010 20zm0-2a8 8 0 100-16 8 8 0 000 16zm1-9h2a1 1 0 010 2h-2v2a1 1 0 01-2 0v-2H9a1 1 0 010-2h2V9a1 1 0 012 0v2z"
+                                                        />
+                                                    </svg>
+                                                    <svg x-show="faq.isOpen" class="fill-current" viewBox="0 0 24 24" width="24" height="24">
+                                                        <path
+                                                            class="heroicon-ui"
+                                                            d="M12 22a10 10 0 110-20 10 10 0 010 20zm0-2a8 8 0 100-16 8 8 0 000 16zm4-8a1 1 0 01-1 1H9a1 1 0 010-2h6a1 1 0 011 1z"
+                                                        />
+                                                    </svg>
+                                                </button>
+                                                <div class="text-gray-700 text-lg mt-2" x-text="faq.answer" x-show="faq.isOpen"></div>
+                                            </div>
+                                        </template>
+                                    </div>
+                                </div>
+                                <h3 class="mb-2 text-2xl font-bold font-heading wow animate__animated animate__fadeInUp">Savings</h3>
+                                <div
+                                    class="mb-20"
                                     x-data="{
 								faqs: [
 									{
@@ -214,30 +304,133 @@
 										answer: 'Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature',
 										isOpen: false,
 									},
-									{
-										question: 'What are the delivery types you use?',
-										answer: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id. ',
-										isOpen: false,
-									},
-									{
-										question: 'How can I pay for my purchases?',
-										answer: 'Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature',
-										isOpen: false,
-									},
-									{
-										question: 'Can I cancel my order?',
-										answer: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literatureId pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id. ',
-										isOpen: false,
-									},
+									
 									
 								]
 							}"
+                                    ,
                                 >
                                     <div class="leading-loose text-lg mt-6 wow animate__animated animate__fadeInUp">
                                         <template x-for="faq in faqs" :key="faq.question">
                                             <div>
                                                 <button
-                                                    class="w-full font-bold border-b border-gray-200 py-3 flex justify-between items-center mt-4"
+                                                    class="w-full font-semibold border-b border-gray-200 py-3 flex justify-between items-center mt-4"
+                                                    @click="faqs = faqs.map(f => ({ ...f, isOpen: f.question !== faq.question ? false : !f.isOpen}))"
+                                                    x-bind:class="isOpen ? 'text-blue-500' : ''"
+                                                >
+                                                    <div x-text="faq.question"></div>
+                                                    <svg x-show="!faq.isOpen" class="fill-current" viewBox="0 0 24 24" width="24" height="24">
+                                                        <path
+                                                            class="heroicon-ui"
+                                                            d="M12 22a10 10 0 110-20 10 10 0 010 20zm0-2a8 8 0 100-16 8 8 0 000 16zm1-9h2a1 1 0 010 2h-2v2a1 1 0 01-2 0v-2H9a1 1 0 010-2h2V9a1 1 0 012 0v2z"
+                                                        />
+                                                    </svg>
+                                                    <svg x-show="faq.isOpen" class="fill-current" viewBox="0 0 24 24" width="24" height="24">
+                                                        <path
+                                                            class="heroicon-ui"
+                                                            d="M12 22a10 10 0 110-20 10 10 0 010 20zm0-2a8 8 0 100-16 8 8 0 000 16zm4-8a1 1 0 01-1 1H9a1 1 0 010-2h6a1 1 0 011 1z"
+                                                        />
+                                                    </svg>
+                                                </button>
+                                                <div class="text-gray-700 text-sm mt-2" x-text="faq.answer" x-show="faq.isOpen"></div>
+                                            </div>
+                                        </template>
+                                    </div>
+                                </div>
+                                <h3 class="mb-2 text-2xl font-bold font-heading wow animate__animated animate__fadeInUp">Mobile Banking</h3>
+                                <div
+                                    class="mb-20"
+                                    x-data="{
+								faqs: [
+									{
+										question: 'Where is my order? Quisque molestie',
+										answer: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id. ',
+										isOpen: true,
+									},
+									{
+										question: 'How can I return an item purchased online?',
+										answer: 'Since 2007 we have been a visionary and a reliable software design engineering partner for world-class brands. We are a boutique digital transformation consultancy. Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id. ',
+										isOpen: false,
+									},
+									{
+										question: 'Can I cancel or change my order?',
+										answer: 'Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature',
+										isOpen: false,
+									},
+									{
+										question: 'I have promotional or discount code?',
+										answer: 'Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature',
+										isOpen: false,
+									},
+									
+									
+								]
+							}"
+                                    ,
+                                >
+                                    <div class="leading-loose text-lg mt-6 wow animate__animated animate__fadeInUp">
+                                        <template x-for="faq in faqs" :key="faq.question">
+                                            <div>
+                                                <button
+                                                    class="w-full font-semibold border-b border-gray-200 py-3 flex justify-between items-center mt-4"
+                                                    @click="faqs = faqs.map(f => ({ ...f, isOpen: f.question !== faq.question ? false : !f.isOpen}))"
+                                                    x-bind:class="isOpen ? 'text-blue-500' : ''"
+                                                >
+                                                    <div x-text="faq.question"></div>
+                                                    <svg x-show="!faq.isOpen" class="fill-current" viewBox="0 0 24 24" width="24" height="24">
+                                                        <path
+                                                            class="heroicon-ui"
+                                                            d="M12 22a10 10 0 110-20 10 10 0 010 20zm0-2a8 8 0 100-16 8 8 0 000 16zm1-9h2a1 1 0 010 2h-2v2a1 1 0 01-2 0v-2H9a1 1 0 010-2h2V9a1 1 0 012 0v2z"
+                                                        />
+                                                    </svg>
+                                                    <svg x-show="faq.isOpen" class="fill-current" viewBox="0 0 24 24" width="24" height="24">
+                                                        <path
+                                                            class="heroicon-ui"
+                                                            d="M12 22a10 10 0 110-20 10 10 0 010 20zm0-2a8 8 0 100-16 8 8 0 000 16zm4-8a1 1 0 01-1 1H9a1 1 0 010-2h6a1 1 0 011 1z"
+                                                        />
+                                                    </svg>
+                                                </button>
+                                                <div class="text-gray-700 text-sm mt-2" x-text="faq.answer" x-show="faq.isOpen"></div>
+                                            </div>
+                                        </template>
+                                    </div>
+                                </div>
+                                <h3 class="mb-2 text-2xl font-bold font-heading wow animate__animated animate__fadeInUp">Spectrum Cards</h3>
+                                <div
+                                    class="mb-20"
+                                    x-data="{
+								faqs: [
+									{
+										question: ' What type of Loans do you offer?',
+										answer: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id. ',
+										isOpen: true,
+									},
+									{
+										question: 'How can I return an item purchased online?',
+										answer: 'Since 2007 we have been a visionary and a reliable software design engineering partner for world-class brands. We are a boutique digital transformation consultancy. Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id. ',
+										isOpen: false,
+									},
+									{
+										question: 'Can I cancel or change my order?',
+										answer: 'Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature',
+										isOpen: false,
+									},
+									{
+										question: 'I have promotional or discount code?',
+										answer: 'Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature',
+										isOpen: false,
+									},
+									
+									
+								]
+							}"
+                                    ,
+                                >
+                                    <div class="leading-loose text-lg mt-6 wow animate__animated animate__fadeInUp">
+                                        <template x-for="faq in faqs" :key="faq.question">
+                                            <div>
+                                                <button
+                                                    class="w-full font-semibold border-b border-gray-200 py-3 flex justify-between items-center mt-4"
                                                     @click="faqs = faqs.map(f => ({ ...f, isOpen: f.question !== faq.question ? false : !f.isOpen}))"
                                                     x-bind:class="isOpen ? 'text-blue-500' : ''"
                                                 >
@@ -274,8 +467,8 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         <div class="widget">
                             <p class="mb-4">© 2023 Spectrum. <br class="hidden lg:block" />All rights reserved.</p>
-                            <h4 class="text-[#0B98DA] font-bold">Contact</h4>
-                            <a href="mailto:info@spectrummfb.com " class="underline text-[#0B98DA] font-semibold">info@spectrummfb.com</a>
+                            <h4 class="text-[#054766] font-bold">Contact</h4>
+                            <a href="mailto:info@spectrummfb.com " class="underline text-[#054766] font-semibold">info@spectrummfb.com</a>
 
                             <nav class="flex space-x-4 pt-3">
                                 <div class="order-first lg:order-last -mx-2 mb-4 lg:mb-0">
@@ -292,7 +485,7 @@
                             </nav>
                         </div>
                         <div class="widget">
-                            <h4 class="mb-3 text-[#0B98DA] font-semibold">Quick Links</h4>
+                            <h4 class="mb-3 text-[#054766] font-semibold">Quick Links</h4>
                             <ul class="list-none">
                                 <li class="mb-2"><a href="loans.html">Loans</a></li>
                                 <li class="mb-2"><a href="savings.html">Savings</a></li>
@@ -301,7 +494,7 @@
                             </ul>
                         </div>
                         <div class="widget">
-                            <h4 class="mb-3 text-[#0B98DA] font-semibold">Company</h4>
+                            <h4 class="mb-3 text-[#054766] font-semibold">Company</h4>
                             <ul class="list-none">
                                 <li class="mb-2"><a href="about.html">About</a></li>
                                 <li class="mb-2"><a href="faqs.html">Faqs</a></li>
@@ -310,7 +503,7 @@
                             </ul>
                         </div>
                         <div class="widget">
-                            <h4 class="mb-3 text-[#0B98DA] font-semibold">Subscribe</h4>
+                            <h4 class="mb-3 text-[#054766] font-semibold">Subscribe</h4>
                             <div class="mt-5">
                                 <p
                                     class="mb-4 text-xs text-blueGray-400 text-center lg:text-left wow animate__animatedanimated animate__fadeInUp animated"
