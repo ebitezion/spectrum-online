@@ -23,11 +23,11 @@
     <body class="bg-white text-body font-body">
         <div class="main">
             <!--Header-->
-            <header class="bg-transparent sticky-bar mt-4">
+            <header class="bg-transparent sticky-bar">
                 <div class="container bg-transparent">
                     <nav class="bg-transparent flex justify-between items-center py-3">
                         <a class="text-3xl font-semibold leading-none" href="index.html">
-                            <img class="h-10" src="assets/imgs/logos/spectrum_logo.png" alt="" />
+                            <img class="h-14" src="assets/imgs/logos/logo.png" alt="" />
                         </a>
                         <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
                             <li class="group relative pt-4 pb-4">
@@ -120,7 +120,7 @@
                 >
                     <div class="flex items-center mb-8">
                         <a class="mr-auto text-3xl font-semibold leading-none" href="#">
-                            <img class="h-10" src="assets/imgs/logos/spectrum_logo.png" alt="" />
+                            <img class="h-14" src="assets/imgs/logos/logo.png" alt="" />
                         </a>
                         <button class="navbar-close">
                             <svg
@@ -200,32 +200,63 @@
                 </nav>
             </div>
 
-            <!--Hero-->
-            <section class="-mt-24 pt-40 pb-12 bg-blueGray-100">
+            <!-- Hero -->
+
+            <section class="-mt-24 pt-40 pb-40 bg-[#5AC5E5]">
                 <div class="container text-center">
                     <h1 class="text-4xl lg:text-4xl text-[#054766] font-bold font-heading mb-5 wow animate__animated animate__fadeInUp animated">
                         Get in touch
                     </h1>
+
+                    <div class="relative">
+                        <div class="absolute -translate-y-[60px] right-[88%]">
+                            <div class="inline-flex items-center rounded-full p-2 bg-green-400 jump">
+                                <span class="material-symbols-outlined text-green-900">ring_volume</span>
+                            </div>
+                        </div>
+
+                        <div class="absolute left-[30%] top-1/2">
+                            <div class="inline-flex items-center rounded-full p-2 bg-red-400 jump">
+                                <span class="material-symbols-outlined text-red-900">phone_in_talk</span>
+                            </div>
+                        </div>
+                        <div class="absolute left-[48%] -translate-y-[123px]">
+                            <div class="inline-flex items-center rounded-full p-2 bg-yellow-400 jump">
+                                <span class="material-symbols-outlined text-yellow-900">group_add </span>
+                            </div>
+                        </div>
+                        <div class="absolute left-[67%] top-1/2">
+                            <div class="inline-flex items-center rounded-full p-2 bg-green-400 jump">
+                                <span class="material-symbols-outlined text-green-900">mail</span>
+                            </div>
+                        </div>
+                        <div class="absolute -translate-y-[60px] right-[2%] lg:right-[8%]">
+                            <div class="inline-flex items-center rounded-full p-2 bg-red-400 jump">
+                                <span class="material-symbols-outlined text-red-900">contact_support</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
+
             <div class="container mx-auto px-4 py-11">
                 <div class="flex flex-col lg:flex-row">
                     <form class="w-full lg:w-1/2">
-                        <div class="mb-4 wow animate__animatedanimated animate__fadeInUp" data-wow-delay=".3s">
+                        <div class="mb-4 wow" data-wow-delay=".3s">
                             <input
                                 class="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
                                 type="text"
                                 placeholder="Name"
                             />
                         </div>
-                        <div class="mb-4 wow animate__animatedanimated animate__fadeInUp" data-wow-delay=".3s">
+                        <div class="mb-4 wow" data-wow-delay=".3s">
                             <input
                                 class="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
                                 type="email"
                                 placeholder="Email"
                             />
                         </div>
-                        <div class="mb-4 wow animate__animatedanimated animate__fadeInUp" data-wow-delay=".3s">
+                        <div class="mb-4 wow" data-wow-delay=".3s">
                             <input
                                 class="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
                                 type="text"
@@ -233,14 +264,14 @@
                             />
                         </div>
 
-                        <div class="mb-4 wow animate__animatedanimated animate__fadeInUp" data-wow-delay=".3s">
+                        <div class="mb-4 wow" data-wow-delay=".3s">
                             <textarea
                                 class="w-full h-24 p-4 text-xs font-semibold leading-none resize-none bg-blueGray-50 rounded outline-none"
                                 placeholder="Message..."
                             ></textarea>
                         </div>
 
-                        <div class="wow animate__animatedanimated animate__fadeInUp mb-10" data-wow-delay=".3s">
+                        <div class="wow mb-10" data-wow-delay=".3s">
                             <button
                                 class="py-4 px-8 text-sm text-white font-semibold w-full leading-none bg-[#0B98DA] hover:bg-[#076A9D] rounded"
                                 type="submit"
@@ -255,7 +286,7 @@
                             <li class="flex items-center -mx-4 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
                                 <div class="px-4">
                                     <span
-                                        class="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold font-heading rounded-full bg-blue-50 text-[#054766]"
+                                        class="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold font-heading rounded-full bg-blue-50 text-blue-900"
                                         ><span class="material-symbols-outlined"> call </span></span
                                     >
                                 </div>
@@ -271,7 +302,7 @@
                             <li class="flex items-center -mx-4 wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
                                 <div class="px-4">
                                     <span
-                                        class="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold font-heading rounded-full bg-blue-50 text-[#054766]"
+                                        class="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold font-heading rounded-full bg-blue-50 text-blue-900"
                                         ><span class="material-symbols-outlined"> mail </span></span
                                     >
                                 </div>
@@ -315,19 +346,18 @@
                         <div class="widget">
                             <h4 class="mb-3 text-[#054766] font-semibold">Quick Links</h4>
                             <ul class="list-none">
-                                <li class="mb-2"><a href="loans.html">Loans</a></li>
-                                <li class="mb-2"><a href="savings.html">Savings</a></li>
-                                <li class="mb-2"><a href="investment.html">Investments </a></li>
-                                <li class="mb-2"><a href="contact.html">Contact us </a></li>
+                                <li class="mb-2"><a href="loans.html" class="hover:underline">Loans</a></li>
+                                <li class="mb-2"><a href="savings.html" class="hover:underline">Savings</a></li>
+                                <li class="mb-2"><a href="investment.html" class="hover:underline">Investments </a></li>
+                                <li class="mb-2"><a href="contact.html" class="hover:underline">Contact us </a></li>
                             </ul>
                         </div>
                         <div class="widget">
                             <h4 class="mb-3 text-[#054766] font-semibold">Company</h4>
                             <ul class="list-none">
-                                <li class="mb-2"><a href="about.html">About</a></li>
-                                <li class="mb-2"><a href="faqs.html">Faqs</a></li>
-
-                                <li class="mb-2"><a href="privacy-policy.html">Privacy Policy </a></li>
+                                <li class="mb-2"><a href="about.html" class="hover:underline">About</a></li>
+                                <li class="mb-2"><a href="faqs.html" class="hover:underline">Faqs</a></li>
+                                <li class="mb-2"><a href="privacy-policy.html" class="hover:underline">Privacy Policy </a></li>
                             </ul>
                         </div>
                         <div class="widget">
