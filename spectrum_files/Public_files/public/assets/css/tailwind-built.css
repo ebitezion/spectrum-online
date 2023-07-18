@@ -1,6 +1,8 @@
 /*Font*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
 /*tailwindcss utility classes*/
 /*! tailwindcss v2.2.17 | MIT License | https://tailwindcss.com*/
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -519,6 +521,9 @@ video {
     .container {
         max-width: 1200px;
     }
+}
+.font-custom {
+    font-family: "Satisfy", cursive;
 }
 .drop-down-menu {
     visibility: hidden;
