@@ -2504,3 +2504,18 @@ li.menu-item-has-children.active .menu-expand {
         background-size: contain !important;
     }
 }
+.btn-nav-pill {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.btn-nav-pill.active,
+.btn-nav-pill:hover {
+    background-color: #075f88;
+    color: #fff;
+}
