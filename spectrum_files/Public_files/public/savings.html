@@ -201,8 +201,10 @@
             </div>
 
             <!--Hero-->
-            <section class="-mt-24 pt-40 pb-12 relative bg-blueGray-100">
-                >
+            <section
+                class="-mt-24 pt-40 pb-12 relative bg-blueGray-100"
+                style="background-image: url('assets/imgs/illustrations/wavylinebg.webp'); background-size: cover; background-position: center"
+            >
                 <div class="container text-center lg:pb-40">
                     <h1 class="text-4xl lg:text-4xl text-[#054766] font-bold font-heading mb-3 wow animate__animated animate__fadeInUp animated">
                         We Make Life Easy
@@ -223,7 +225,7 @@
                 </svg>
             </section>
 
-            <section class="py-12 md:py-16 lg:py-32 overflow-x-hidden" id="key-features">
+            <section class="py-12 md:py-16 lg:pb-32 overflow-x-hidden" id="key-features">
                 <div class="container px-4 mx-auto">
                     <div class="flex flex-wrap lg:flex-nowrap">
                         <div class="w-full lg:w-1/2">
@@ -302,12 +304,12 @@
                                 <div class="w-full lg:w-1/2 mb-8 lg:mb-0 text-center">
                                     <div class="">
                                         <span
-                                            class="text-xs py-1 px-3 text-blue-500 font-semibold bg-blue-50 rounded-xl wow animate__animated animate__fadeInDown"
+                                            class="text-xs py-1 px-3 text-[#0B98DA] font-semibold bg-blue-50 rounded-xl wow animate__animated animate__fadeInDown"
                                             data-wow-delay=".9s"
                                             >We make life easy</span
                                         >
                                         <h2
-                                            class="text-3xl md:text-4xl mb-4 font-bold font-heading wow animate__animated animate__fadeInUp animated"
+                                            class="text-3xl md:text-4xl mb-4 text-[#075F88] font-bold font-heading wow animate__animated animate__fadeInUp animated"
                                             data-wow-delay=".3s"
                                         >
                                             Saving the best way
@@ -318,8 +320,8 @@
                                     </div>
                                     <div>
                                         <ul class="flex flex-col lg:flex-row justify-center w-600 bg-blueGray-50 rounded-xl gap-4 p-3">
-                                            <li class="active">
-                                                <button class="btn btn-nav-pill" onclick="showContent('home')">Easy Save</button>
+                                            <li>
+                                                <button class="btn btn-nav-pill active" onclick="showContent('home')">Easy Save</button>
                                             </li>
                                             <li>
                                                 <button class="btn btn-nav-pill" onclick="showContent('menu1')">Max Interest Savings</button>
@@ -329,10 +331,9 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <hr />
                                 </div>
                             </div>
-
+                            <hr />
                             <div class="w-full flex justify-center px-3 wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
                                 <div class="relative w-full rounded">
                                     <div id="home" class="content">
@@ -370,11 +371,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="w-full md:w-1/2 px-3 order-0 md:order-0 mb-12 md:mb-0 wow" data-wow-delay=".5s">
-                                                    <img
-                                                        class="sm:max-w-sm lg:max-w-lg mx-auto"
-                                                        src="assets/imgs/illustrations/80edbd3e-309a-4cb8-b238-d4adb9073195.jpg"
-                                                        alt=""
-                                                    />
+                                                    <img class="sm:max-w-sm lg:max-w-lg mx-auto" src="assets/imgs/illustrations/about9.png" alt="" />
                                                 </div>
                                             </div>
                                         </section>
@@ -420,7 +417,7 @@
                                                     <div class="w-full md:w-1/2 px-3 order-0 md:order-0 mb-12 md:mb-0" data-wow-delay=".5s">
                                                         <img
                                                             class="sm:max-w-sm lg:max-w-lg mx-auto"
-                                                            src="assets/imgs/illustrations/80edbd3e-309a-4cb8-b238-d4adb9073195.jpg"
+                                                            src="assets/imgs/illustrations/about8.png"
                                                             alt=""
                                                         />
                                                     </div>
@@ -468,7 +465,7 @@
                                                     <div class="w-full md:w-1/2 px-3 order-0 md:order-0 mb-12 md:mb-0" data-wow-delay=".5s">
                                                         <img
                                                             class="sm:max-w-sm lg:max-w-lg mx-auto"
-                                                            src="assets/imgs/illustrations/80edbd3e-309a-4cb8-b238-d4adb9073195.jpg"
+                                                            src="assets/imgs/illustrations/about5.png"
                                                             alt=""
                                                         />
                                                     </div>
@@ -564,25 +561,7 @@
                 </div>
             </div>
         </footer>
-        <script>
-            function showContent(contentId) {
-                const contentContainers = document.querySelectorAll(".content");
-                contentContainers.forEach((container) => {
-                    container.classList.add("hidden");
-                });
 
-                const selectedContent = document.getElementById(contentId);
-                selectedContent.classList.remove("hidden");
-
-                const buttons = document.querySelectorAll(".btn-nav-pill");
-                buttons.forEach((button) => {
-                    button.classList.remove("active");
-                });
-
-                const activeButton = document.querySelector(`[onclick="showContent('${contentId}')"]`);
-                activeButton.classList.add("active");
-            }
-        </script>
         <!--Import Vendor Js-->
         <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
         <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
@@ -595,5 +574,6 @@
         <script src="assets/js/vendor/textType.js"></script>
         <script src="assets/js/vendor/mobile-menu.js"></script>
         <script src="assets/js/main.js?v=2.0"></script>
+        <script src="assets/js/carousel.js"></script>
     </body>
 </html>
